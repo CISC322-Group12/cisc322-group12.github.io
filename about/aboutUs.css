@@ -1,0 +1,24 @@
+.bb1{
+    float: right;
+    width: 200px;
+    height: 110px;
+    margin-top: 80px;
+    margin-right: 40px;
+    -webkit-transition: transform .30s linear;
+    -moz-transition: transform .30s linear;
+    -o-transition: transform .30s linear;
+    transition: transform .30s linear;
+}
+.photo:hover{
+    transform:rotate(360deg);
+}
+.photo img{
+    clip-path: circle(40% at 50% 50%);
+    -webkit-clip-path:circle(40% at 50% 50%);
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+.photo img:hover{
+    clip-path: circle(75% at 50% 50%);
+    -webkit-clip-path:circle(75% at 50% 50%);
+}
